@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="login.css"> 
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="message signup">
+                <div class="btn-wrapper">
+                    <button class="button" id="signup">SignUp</button>
+                    <button class="button" id="login"> Login</button>
+                    <!--
+                    <div class="social-media-login" style="position: relative; top: 100px;">
+                        <div style="text-align: center; padding-top: 10px; font-size: 22px; color: #009b87; padding-bottom: 10px;">OR, <a style="text-decoration: underline;">continue</a> with?</div><br>
+                        <img src="googlelogin.jpg" alt="google-sign-in" style="cursor:pointer;">
+                        <img src="facebooklogin.jpg" alt="google-sign-in" style="cursor:pointer;">
+                    </div>-->
+                
+                </div>
+            </div>
+            <!-- Signup Form -->
+            <div class="form form--signup">
+                <div class="form--heading">New to <span style="font-weight: 600;">WebTML</span>? <span style="text-decoration: underline; cursor: pointer;">Sign Up Here</span></div>
+                <form autocomplete="off">
+                    <input type="text" placeholder="Enter your Full Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="email" placeholder="Confirm Email Address">
+                    <input type="password" placeholder="Password">
+                    <button class="button">Sign Up</button>
+                    
+                    <div style="text-align: right; color: #009b87">⬜ Remember Me</div>
+                    <!--<img src="googlelogin.jpg" alt="google-sign-in">-->                    
+                    <br><br>
+                    <div class="round">
+                            <input type="checkbox" id="checkbox" style="width: 13px;"/>
+                            <label for="checkbox"></label>
+                    </div>
+                    <span class="terms-of-service">I agree to the <a href="#">Terms of Service</a>, 
+                    <br>and have read and understood <br>the<a href="#"> Privacy Policy</a>.</span>
+                </form>
+            </div>
+            <!-- Login Form -->
+            <div class="form form--login">
+                <div class="form--heading">Welcome Back!</div>
+                <form autocomplete="off">
+                    <input type="text" placeholder="Username/Email Address">
+                    <input type="password" placeholder="Password">
+                    <button class="button">Login</button>
+                    <div class="forgot-password">Forgot Password?</div>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
